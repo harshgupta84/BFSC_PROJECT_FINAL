@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { DisplayCampaigns } from '../components';
 import { useStateContext } from '../context';
-import Logo from '../assets/RaiseWavesBlack.jpg' ;
+import Logo from '../assets/DreamFund.png';
 
 const Home = () => {
   const [isLoading, setIsLoading] = useState(false);
@@ -20,22 +20,35 @@ const Home = () => {
   }, [address, contract]);
 
   return (
-    <div className="bg-gradient-to-b from-indigo-900 to-gray-900 text-white min-h-screen flex flex-col items-center justify-center p-8 rounded-md">
-      <div className="text-center mb-8 flex">
-        <h1 className="font-epilogue font-bold text-4xl md:text-5xl mb-2">
-        <img src={Logo} alt='logo' className='w-40 p-4'/>
-          Welcome to Raise Waves
-        </h1>
-        <p className="font-epilogue text-lg text-gray-400">
-          Elevating Dreams, One Backer at a Time
-        </p>
+    <div style={{
+      backgroundColor: '#111827', // Change background color
+      color: 'white',
+      minHeight: '100vh',
+      display: 'flex',
+      flexDirection: 'column',
+      alignItems: 'center',
+      justifyContent: 'center',
+      padding: '8px',
+      borderRadius: '8px'
+    }}>
+      <div style={{ textAlign: 'center', marginBottom: '16px', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
+        <img src={Logo} alt='logo' style={{ width: '160px', marginRight: '10px' }}/> {/* Logo on the left */}
+        <div>
+          <h1 style={{ fontFamily: 'Epilogue', fontWeight: 'bold', fontSize: '2.5rem', marginBottom: '12px' }}>
+            Welcome to DreamFund
+          </h1>
+          <p style={{ fontFamily: 'Epilogue', fontSize: '1.25rem', color: '#9CA3AF', marginTop: '0' }}>
+            Empowering Aspirations, Supporter by Supporter
+          </p>
+        </div>
       </div>
 
-      <div className="w-full max-w-screen-lg">
+      <div style={{ width: '100%', maxWidth: '1200px' }}>
         <DisplayCampaigns
           title="All Campaigns"
           isLoading={isLoading}
           campaigns={campaigns}
+          cardBackgroundColor="#1F2937" // Change background color for card
         />
       </div>
     </div>

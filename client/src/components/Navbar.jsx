@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { useStateContext } from '../context';
 import { CustomButton } from './';
 import { logo, menu, search, thirdweb } from '../assets';
+
 import { navlinks } from '../constants';
 
 const Navbar = () => {
@@ -29,7 +30,7 @@ const Navbar = () => {
         <CustomButton
           btnType="button"
           title={address ? 'Create a campaign' : 'Connect'}
-          styles={address ? 'bg-[#1dc071]' : 'bg-[#8c6dfd]'}
+          styles={{ backgroundColor: address ? '#1dc071' : '#8c6dfd', color: 'white', padding: '12px 24px', borderRadius: '8px', fontWeight: 'bold', fontSize: '16px', cursor: 'pointer', border: 'none' }} // Modify button styles
           handleClick={() => {
             if (address) navigate('create-campaign');
             else connect();

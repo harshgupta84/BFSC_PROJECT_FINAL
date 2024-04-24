@@ -4,7 +4,7 @@ import { useStateContext } from '../context';
 import { CustomButton, FormField, Loader } from '../components';
 import { checkIfImage } from '../utils';
 import { money } from '../assets';
-import {ethers} from 'ethers';
+import { ethers } from 'ethers';
 
 const CreateCampaign = () => {
   const navigate = useNavigate();
@@ -36,7 +36,7 @@ const CreateCampaign = () => {
         setIsLoading(false);
         navigate('/');
       } else {
-        alert('Provide a valid image URL');
+        alert('Please provide a valid image URL.');
         setForm({ ...form, image: '' });
       }
     });
@@ -51,21 +51,18 @@ const CreateCampaign = () => {
         </h1>
       </div>
 
-      <form
-        onSubmit={handleSubmit}
-        className="w-full mt-8 md:w-[400px] flex flex-col gap-4"
-      >
+      <form onSubmit={handleSubmit} className="w-full mt-8 md:w-[400px] flex flex-col gap-4">
         <div className="flex flex-col md:flex-row md:gap-4">
           <FormField
             labelName="Your Name *"
-            placeholder="John Doe"
+            placeholder="Enter your name"
             inputType="text"
             value={form.name}
             handleChange={(e) => handleFormFieldChange('name', e)}
           />
           <FormField
             labelName="Campaign Title *"
-            placeholder="Write a title"
+            placeholder="Enter campaign title"
             inputType="text"
             value={form.title}
             handleChange={(e) => handleFormFieldChange('title', e)}
@@ -90,7 +87,7 @@ const CreateCampaign = () => {
           />
           <FormField
             labelName="End Date *"
-            placeholder="End Date"
+            placeholder="Select end date"
             inputType="date"
             value={form.deadline}
             handleChange={(e) => handleFormFieldChange('deadline', e)}
@@ -99,7 +96,7 @@ const CreateCampaign = () => {
 
         <FormField
           labelName="Campaign Image *"
-          placeholder="Place image URL of your campaign"
+          placeholder="Paste image URL"
           inputType="url"
           value={form.image}
           handleChange={(e) => handleFormFieldChange('image', e)}
@@ -109,7 +106,7 @@ const CreateCampaign = () => {
           <CustomButton
             btnType="submit"
             title="Submit New Campaign"
-            styles="bg-[#1dc071]"
+            styles="bg-[blue]"
           />
         </div>
       </form>

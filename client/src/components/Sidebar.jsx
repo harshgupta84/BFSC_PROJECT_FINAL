@@ -29,7 +29,7 @@ const Sidebar = () => {
         <img src={logo} alt="logo" className="w-12 h-12" />
       </Link>
 
-      <div className="flex flex-col justify-center items-center space-y-4">
+      <div className="flex flex-col justify-center items-center space-y-4"> {/* Adjusted margin-top here */}
         {navlinks.map((link) => (
           <Icon
             key={link.name}
@@ -45,9 +45,7 @@ const Sidebar = () => {
         ))}
       </div>
 
-      <div className="w-12 h-12 bg-gray-700 hover:bg-blue-400 transition-colors rounded-full flex justify-center items-center">
-        <img src={sun} alt="sun_icon" className="w-1/2 h-1/2" />
-      </div>
+      
     </div>
   );
 };

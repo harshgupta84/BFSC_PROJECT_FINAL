@@ -52,7 +52,7 @@ const CampaignDetails = () => {
       </div>
 
       <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-10">
-        <div className="space-y-6">
+        <div className="space-y-6 text-gray-300">
           <div className="flex items-center gap-4">
             <div className="w-12 h-12 flex items-center justify-center rounded-full bg-gray-700 cursor-pointer">
               <img src={thirdweb} alt="user" className="w-8 h-8 object-contain" />
@@ -65,7 +65,7 @@ const CampaignDetails = () => {
 
           <div>
             <h4 className="font-semibold text-white">Story</h4>
-            <p className="text-gray-400 leading-7">{state.description}</p>
+            <p className="leading-7">{state.description}</p>
           </div>
 
           <div>
@@ -73,11 +73,11 @@ const CampaignDetails = () => {
             <div className="space-y-2">
               {donators.length > 0 ? donators.map((item, index) => (
                 <div key={`${item.donator}-${index}`} className="flex justify-between items-center">
-                  <p className="text-gray-500 break-all">{index + 1}. {item.donator}</p>
-                  <p className="text-gray-400">${item.donation}</p>
+                  <p className="break-all">{index + 1}. {item.donator}</p>
+                  <p>${item.donation}</p>
                 </div>
               )) : (
-                <p className="text-gray-400">No donators yet. Be the first one!</p>
+                <p>No donators yet. Be the first one!</p>
               )}
             </div>
           </div>
@@ -86,7 +86,7 @@ const CampaignDetails = () => {
         <div className="flex flex-col space-y-6">
           <h4 className="font-semibold text-white">Fund</h4>
           <div className="p-4 bg-gray-800 rounded-lg">
-            <p className="text-white font-medium text-xl text-center mb-6">Fund the campaign</p>
+            <p className="font-medium text-xl text-center mb-6">Fund the campaign</p>
             <input
               type="number"
               placeholder="ETH 0.1"
