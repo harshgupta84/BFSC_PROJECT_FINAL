@@ -1,15 +1,13 @@
 import React from 'react';
 import { Route, Routes } from 'react-router-dom';
 
-import { Sidebar, Navbar } from './components';
+import { Sidebar, Navbar } from './components'; // Assuming Sidebar is imported from components directory
 import { CampaignDetails, CreateCampaign, Home, Profile } from './pages';
 
 const App = () => {
   return (
     <div className="relative sm:-8 p-4 bg-black min-h-screen flex flex-row">
-      <div className="sm:flex hidden mr-10 relative">
-        <Sidebar />
-      </div>
+      <Sidebar /> {/* Move Sidebar component here */}
 
       <div className="flex-1 max-sm:w-full max-w-[1280px] mx-auto sm:pr-5">
         <Navbar />
@@ -25,4 +23,4 @@ const App = () => {
   )
 }
 
-export default App
+export default App;

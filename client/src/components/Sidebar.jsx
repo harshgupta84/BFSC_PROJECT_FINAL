@@ -24,12 +24,12 @@ const Sidebar = () => {
   const [isActive, setIsActive] = useState('dashboard');
 
   return (
-    <div className="flex flex-col justify-between items-center h-screen bg-gray-900 text-white py-8">
+    <div className="flex flex-col items-center bg-gray-900 text-white py-8"> {/* Removed justify-between here */}
       <Link to="/" className="mb-8">
         <img src={logo} alt="logo" className="w-12 h-12" />
       </Link>
 
-      <div className="flex flex-col justify-center items-center space-y-4"> {/* Adjusted margin-top here */}
+      <div className="flex flex-col justify-center items-center space-y-4">
         {navlinks.map((link) => (
           <Icon
             key={link.name}
@@ -44,8 +44,6 @@ const Sidebar = () => {
           />
         ))}
       </div>
-
-      
     </div>
   );
 };
