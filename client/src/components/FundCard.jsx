@@ -1,42 +1,33 @@
 import React from 'react';
-
-import { tagType, thirdweb, menu, dashboard } from '../assets';
+import { thirdweb, menu, dashboard } from '../assets';
 import { daysLeft } from '../utils';
 
 const FundCard = ({ owner, title, description, target, deadline, amountCollected, image, handleClick }) => {
-  // const remainingDays = daysLeft(deadline);
-
   return (
-    <div className="sm:w-[288px] w-full rounded-[15px] bg-[#1c1c24] cursor-pointer transition duration-300 ease-in-out transform hover:scale-105" onClick={handleClick}>
-      <img src={image} alt="fund" className="w-full h-[158px] object-cover rounded-t-[15px]" />
-
-      <div className="flex flex-col p-4">
-        <div className="flex flex-row items-center mb-[18px]">
-          <img src={tagType} alt="tag" className="w-[17px] h-[17px] object-contain" />
-          <p className="ml-[12px] mt-[2px]  font-medium text-[12px] text-[#808191]">Charity</p>
+    <div className="w-full rounded-lg bg-gray-800 cursor-pointer transition duration-300 ease-in-out transform hover:scale-105" onClick={handleClick}>
+      <img src={image} alt="fund" className="w-full h-64 object-cover rounded-t-lg" />
+      <div className="p-4">
+        <div className="flex items-center mb-2">
+          <img src={menu} alt="tag" className="w-4 h-4 mr-1" />
+          <p className="text-sm text-gray-400">Charity</p>
         </div>
-
-        <div className="block">
-          <h3 className=" font-semibold text-[16px] text-white text-left leading-[26px] truncate">{title}</h3>
-          <p className="mt-[5px] font-normal text-[#808191] text-left leading-[18px] truncate">{description}</p>
-        </div>
-
-        <div className="flex justify-between flex-wrap mt-[15px] gap-2">
+        <h3 className="text-lg font-semibold text-white mb-1 truncate">{title}</h3>
+        <p className="text-sm text-gray-400 mb-4 truncate">{description}</p>
+        <div className="flex justify-between mb-4">
           <div className="flex flex-col">
-            <h4 className=" font-semibold text-[14px] text-[#b2b3bd] leading-[22px]">{amountCollected}</h4>
-            <p className="mt-[3px] font-normal text-[12px] leading-[18px] text-[#808191] sm:max-w-[120px] truncate">Raised of {target}</p>
+            <h4 className="text-sm font-semibold text-gray-400">{amountCollected}</h4>
+            <p className="text-xs text-gray-500">Raised of {target}</p>
           </div>
           <div className="flex flex-col">
-            <h4 className=" font-semibold text-[14px] text-[#b2b3bd] leading-[22px]">{deadline}</h4>
-            <p className="mt-[3px] font-normal text-[12px] leading-[18px] text-[#808191] sm:max-w-[120px] truncate">Days Left</p>
+            <h4 className="text-sm font-semibold text-gray-400">{deadline}</h4>
+            <p className="text-xs text-gray-500">Days Left</p>
           </div>
         </div>
-
-        <div className="flex items-center mt-[20px] gap-[12px]">
-          <div className="w-[30px] h-[30px] rounded-full flex justify-center items-center bg-[#13131a]">
-            <img src={dashboard} alt="user" className="w-1/2 h-1/2 object-contain" />
+        <div className="flex items-center">
+          <div className="w-8 h-8 rounded-full flex justify-center items-center bg-gray-700 mr-2">
+            <img src={dashboard} alt="user" className="w-4 h-4" />
           </div>
-          <p className="flex-1  font-normal text-[12px] text-[#808191] truncate">by <span className="text-[#b2b3bd]">{owner}</span></p>
+          <p className="text-xs text-gray-500">by <span className="text-gray-400">{owner}</span></p>
         </div>
       </div>
     </div>
