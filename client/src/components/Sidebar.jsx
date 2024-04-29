@@ -1,21 +1,16 @@
 import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 
-import { logo, sun } from '../assets';
 import { navlinks } from '../constants';
 
-const Icon = ({ name, imgUrl, isActive, disabled, handleClick }) => (
+const Icon = ({ name, isActive, disabled, handleClick }) => (
   <div
-    className={`w-12 h-12 rounded-full flex justify-center items-center ${
-      isActive === name ? 'bg-blue-500 text-white' : 'bg-gray-300 hover:bg-blue-300'
+    className={`w-full h-12 flex justify-center items-center ${
+      isActive === name ? 'bg-blue-500 text-white' : 'bg-gray-900 hover:bg-gray-800'
     } ${!disabled && 'cursor-pointer'}`}
     onClick={handleClick}
   >
-    <img
-      src={imgUrl}
-      alt="fund_logo"
-      className={`w-1/2 h-1/2 ${isActive !== name && 'grayscale'}`}
-    />
+    <span className={`${isActive !== name && 'opacity-50'}`}>{name}</span>
   </div>
 );
 
@@ -24,12 +19,12 @@ const Sidebar = () => {
   const [isActive, setIsActive] = useState('dashboard');
 
   return (
-    <div className="flex flex-col items-center bg-gray-900 text-white py-8"> {/* Removed justify-between here */}
+    <div className="flex flex-col items-center bg-gray-900 text-white py-8">
       <Link to="/" className="mb-8">
-        <img src={logo} alt="logo" className="w-12 h-12" />
+        {/* You can optionally display a logo here */}
       </Link>
 
-      <div className="flex flex-col justify-center items-center space-y-4">
+      <div className="flex flex-col justify-center items-center space-y-4 w-full">
         {navlinks.map((link) => (
           <Icon
             key={link.name}

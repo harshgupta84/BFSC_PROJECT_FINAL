@@ -26,7 +26,7 @@ const Navbar = () => {
         </div>
       </div>
 
-      <div className="sm:flex hidden flex-row justify-end gap-4">
+      <div className="sm:flex hidden flex-row justify-end gap-4 items-center">
         <CustomButton
           btnType="button"
           title={address ? 'Create a campaign' : 'Connect'}
@@ -37,9 +37,9 @@ const Navbar = () => {
           }}
         />
 
-        <Link to="/profile">
+        <Link to="/profile" className="text-white">
           <div className="w-[52px] h-[52px] rounded-full bg-[#2c2f32] flex justify-center items-center cursor-pointer">
-            <img src={thirdweb} alt="user" className="w-[60%] h-[60%] object-contain" />
+            <img src={menu} alt="user" className="w-[60%] h-[60%] object-contain" />
           </div>
         </Link>
       </div>
