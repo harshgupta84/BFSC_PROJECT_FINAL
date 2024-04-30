@@ -16,15 +16,15 @@ export const StateContextProvider = ({ children }) => {
   const publishCampaign = async (form) => {
     try {
       const data = await createCampaign({
-				args: [
-					address, 
-					form.title, 
-					form.description, 
-					form.target,
-					new Date(form.deadline).getTime(), 
-					form.image,
-				],
-			});
+        args: [
+          address,
+          form.title,
+          form.description,
+          form.target,
+          new Date(form.deadline).getTime(),
+          form.image,
+        ],
+      });
 
       console.log("contract call success", data)
     } catch (error) {
@@ -58,7 +58,7 @@ export const StateContextProvider = ({ children }) => {
   }
 
   const donate = async (pId, amount) => {
-    const data = await contract.call('donateToCampaign', [pId], { value: ethers.utils.parseEther(amount)});
+    const data = await contract.call('donateToCampaign', [pId], { value: ethers.utils.parseEther(amount) });
 
     return data;
   }
@@ -69,7 +69,7 @@ export const StateContextProvider = ({ children }) => {
 
     const parsedDonations = [];
 
-    for(let i = 0; i < numberOfDonations; i++) {
+    for (let i = 0; i < numberOfDonations; i++) {
       parsedDonations.push({
         donator: donations[0][i],
         donation: ethers.utils.formatEther(donations[1][i].toString())
@@ -82,7 +82,7 @@ export const StateContextProvider = ({ children }) => {
 
   return (
     <StateContext.Provider
-      value={{ 
+      value={{
         address,
         contract,
         connect,
