@@ -43,9 +43,9 @@ const CreateCampaign = () => {
   };
 
   return (
-    <div className="bg-gray-900 border border-dashed text-white  md:p-8 rounded-md flex flex-col items-center">
+    <div className="bg-gray-900  text-white p-10   rounded-md flex flex-col items-center">
       {isLoading && <Loader />}
-      <div className="bg-[#3a3a43] rounded-md p-4 md:min-w-[380px] text-center">
+      <div className="bg-[#3a3a43] rounded-md  md:min-w-[380px] text-center">
         <h1 className="font-epilogue font-bold text-3xl sm:text-4xl text-white py-2">
           Start a Campaign
         </h1>
