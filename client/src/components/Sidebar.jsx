@@ -5,9 +5,8 @@ import { navlinks } from '../constants';
 
 const Icon = ({ name, isActive, disabled, handleClick }) => (
   <div
-    className={`w-full h-12 flex justify-center items-center ${
-      isActive === name ? 'bg-blue-500 text-white' : 'bg-gray-900 hover:bg-gray-800'
-    } ${!disabled && 'cursor-pointer'}`}
+    className={`w-full h-12 flex justify-center items-center ${isActive === name ? 'bg-blue-500 text-white' : 'bg-gray-900 hover:bg-gray-800'
+      } ${!disabled && 'cursor-pointer'}`}
     onClick={handleClick}
   >
     <span className={`${isActive !== name && 'opacity-50'}`}>{name}</span>
@@ -20,9 +19,6 @@ const Sidebar = () => {
 
   return (
     <div className="flex flex-col items-center bg-gray-900 text-white py-8">
-      <Link to="/" className="mb-8">
-        {/* You can optionally display a logo here */}
-      </Link>
 
       <div className="flex flex-col justify-center items-center space-y-4 w-full">
         {navlinks.map((link) => (

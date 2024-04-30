@@ -1,5 +1,5 @@
 import React from 'react';
-import { thirdweb, menu, dashboard } from '../assets';
+import { menu, dashboard } from '../assets';
 import { daysLeft } from '../utils';
 
 const FundCard = ({ owner, title, description, target, deadline, amountCollected, image, handleClick }) => {
@@ -19,7 +19,7 @@ const FundCard = ({ owner, title, description, target, deadline, amountCollected
             <p className="text-xs text-gray-500">Raised of {target}</p>
           </div>
           <div className="flex flex-col">
-            <h4 className="text-sm font-semibold text-gray-400">{deadline}</h4>
+            <h4 className="text-sm font-semibold text-gray-400">{daysLeft(deadline)}</h4>
             <p className="text-xs text-gray-500">Days Left</p>
           </div>
         </div>

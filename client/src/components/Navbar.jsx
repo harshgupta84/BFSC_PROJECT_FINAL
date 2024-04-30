@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
 import { useStateContext } from "../context";
 import { CustomButton } from "./";
-import { logo, search, thirdweb, menu } from "../assets";
+import { logo, search, menu } from "../assets";
 import { navlinks } from "../constants";
 import Logo from '../assets/DreamFund.png';
 const Icon = ({ name, isActive, disabled, handleClick }) => (
