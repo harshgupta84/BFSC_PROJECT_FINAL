@@ -4,13 +4,13 @@ import { useStateContext } from "../context";
 import { CustomButton } from "./";
 import { logo, search, thirdweb, menu } from "../assets";
 import { navlinks } from "../constants";
-
+import Logo from '../assets/DreamFund.png';
 const Icon = ({ name, isActive, disabled, handleClick }) => (
   <div
     className={`w-full h-12 flex justify-center items-center ${
       isActive === name
         ? "bg-blue-500 text-white"
-        : "bg-gray-900 hover:bg-gray-800"
+        : "bg-gray-900 hover:bg-blue-600"
     } ${!disabled && "cursor-pointer"}`}
     onClick={handleClick}
   >
@@ -24,8 +24,9 @@ const Navbar = () => {
   const { connect, address } = useStateContext();
 
   return (
-    <div className="flex md:flex-row flex-col-reverse justify-between mb-8 gap-6">
-      <div className="flex text-white justify-center items-center space-y-4 w-full">
+    <div className="flex md:flex-row flex-col-reverse justify-between mb-8 gap-4">
+      <Link to="/" ><img src={Logo} className=" max-w-14" /></Link>
+      <div className="flex text-white justify-center items-center border border-dashed w-full">
         {navlinks.map((link) => (
           <Icon
             key={link.name}
@@ -41,7 +42,7 @@ const Navbar = () => {
         ))}
       </div>
 
-      <div className="sm:flex hidden flex-row justify-end gap-4 items-center">
+      <div className="sm:flex hidden border border-dotted flex-row justify-end gap-4 items-center">
         <CustomButton
           btnType="button"
           title={address ? "Create a campaign" : "Connect your wallet"}
@@ -60,16 +61,6 @@ const Navbar = () => {
             else connect();
           }}
         />
-
-        <Link to="/profile" className="text-white">
-          <div className="w-[52px] h-[52px] rounded-full bg-[#2c2f32] flex justify-center items-center cursor-pointer">
-            <img
-              src={menu}
-              alt="user"
-              className="w-[60%] h-[60%] object-contain"
-            />
-          </div>
-        </Link>
       </div>
     </div>
   );

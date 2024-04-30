@@ -3,10 +3,11 @@ import { Route, Routes } from "react-router-dom";
 
 import { Sidebar, Navbar } from "./components"; // Assuming Sidebar is imported from components directory
 import { CampaignDetails, CreateCampaign, Home, Profile } from "./pages";
+import Footer from "./components/Footer";
 
 const App = () => {
   return (
-    <div className="relative bg-slate-900 sm:-8 p-4  min-h-screen flex flex-row">
+    <div className="relative bg-slate-900 sm:-8 p-4  min-h-screen flex flex-col">
       <div className="flex-1 max-sm:w-full max-w-[1280px] mx-auto sm:pr-5">
         <Navbar />
 
@@ -17,6 +18,7 @@ const App = () => {
           <Route path="/campaign-details/:id" element={<CampaignDetails />} />
         </Routes>
       </div>
+      <Footer />
     </div>
   );
 };

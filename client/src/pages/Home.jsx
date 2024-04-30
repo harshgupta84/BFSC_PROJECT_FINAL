@@ -32,7 +32,7 @@ const Home = () => {
       borderRadius: '8px'
     }}>
       <div style={{ textAlign: 'center', marginBottom: '16px', display: 'flex', flexDirection: 'row', alignItems: 'center', justifyContent: 'center' }}>
-        <img src={Logo} alt='logo' style={{ width: '160px', marginRight: '10px' }}/> {/* Logo on the left */}
+         {/* Logo on the left */}
         <div>
           <h1 style={{ fontFamily: 'Epilogue', fontWeight: 'bold', fontSize: '2.5rem', marginBottom: '12px' }}>
             Welcome to DreamFund
