@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { useStateContext } from '../context';
 import { CustomButton, FormField, Loader } from '../components';
 import { checkIfImage } from '../utils';
-import { money } from '../assets';
+
 import { ethers } from 'ethers';
 
 const CreateCampaign = () => {

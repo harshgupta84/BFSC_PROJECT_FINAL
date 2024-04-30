@@ -44,7 +44,7 @@ const Navbar = () => {
       <div className="sm:flex hidden flex-row justify-end gap-4 items-center">
         <CustomButton
           btnType="button"
-          title={address ? "Create a campaign" : "Connect"}
+          title={address ? "Create a campaign" : "Connect your wallet"}
           styles={{
             backgroundColor: address ? "#1dc071" : "#8c6dfd",
             color: "white",

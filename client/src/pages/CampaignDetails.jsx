@@ -44,7 +44,7 @@ const CampaignDetails = () => {
           />
           <div className="relative w-full h-3 bg-gray-800 mt-2">
             <div
-              className="absolute h-full bg-green-500"
+              className="absolute h-full bg-blue-100"
               style={{
                 width: `${calculateBarPercentage(
                   state.target,
@@ -62,7 +62,7 @@ const CampaignDetails = () => {
             <CountBox title="Total Backers" value={donators.length} />
           </div>
           <div className="p-4 border border-dashed border-gray-700 rounded-lg">
-            <h4 className="font-semibold text-white">Donators</h4>
+            <h4 className="font-semibold text-white">Donors</h4>
             <div className="space-y-2">
               {donators.length > 0 ? (
                 donators.map((item, index) => (
@@ -72,7 +72,7 @@ const CampaignDetails = () => {
                   </div>
                 ))
               ) : (
-                <p className="text-white">No donators yet. Be the first one!</p>
+                <p className="text-white">No donors yet. Be the first one!</p>
               )}
             </div>
           </div>
