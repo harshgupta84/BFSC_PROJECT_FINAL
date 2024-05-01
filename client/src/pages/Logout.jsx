@@ -41,7 +41,7 @@ const Logout = () => {
       <button
         onClick={handleLogout}
         style={{
-          backgroundColor: '#4CAF50',
+          backgroundColor: 'Blue',
           border: 'none',
           color: 'white',
           padding: '15px 32px',

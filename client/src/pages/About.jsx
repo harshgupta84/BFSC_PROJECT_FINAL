@@ -10,7 +10,7 @@ const About = () => {
         >
           <summary class="flex cursor-pointer items-center justify-between gap-1.5">
             <h2 class="text-lg font-medium text-gray-900">
-              Lorem ipsum dolor sit amet consectetur adipisicing?
+              1. Create or connect your Metamask wallet.
             </h2>
 
             <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
@@ -30,17 +30,15 @@ const About = () => {
           </summary>
 
           <p class="mt-4 leading-relaxed text-gray-700">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-            veritatis molestias culpa in, recusandae laboriosam neque aliquid
-            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
-            distinctio corporis earum similique!
+            The first thing you need to use DreamFund is to have a Metamask wallet. If you don't have 
+            one, create the wallet and click on 'Connect your wallet' button to start the process. 
           </p>
         </details>
 
         <details class="group border-s-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
           <summary class="flex cursor-pointer items-center justify-between gap-1.5">
             <h2 class="text-lg font-medium text-gray-900">
-              Lorem ipsum dolor sit amet consectetur adipisicing?
+              2. Create Campaign.
             </h2>
 
             <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
@@ -60,16 +58,15 @@ const About = () => {
           </summary>
 
           <p class="mt-4 leading-relaxed text-gray-700">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-            veritatis molestias culpa in, recusandae laboriosam neque aliquid
-            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
-            distinctio corporis earum similique!
+            Select Campaign tab to create a new campaign. All the entries of the form are mandatory.
+            For creating a campaign, certain amount of coins are required. It needs to be paid by the 
+            campaign creator using his Metamask wallet. The campaign gets listed on the homepage.
           </p>
         </details>
         <details class="group border-s-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
           <summary class="flex cursor-pointer items-center justify-between gap-1.5">
             <h2 class="text-lg font-medium text-gray-900">
-              Lorem ipsum dolor sit amet consectetur adipisicing?
+              3. Know Campaign details.
             </h2>
 
             <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
@@ -89,16 +86,14 @@ const About = () => {
           </summary>
 
           <p class="mt-4 leading-relaxed text-gray-700">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-            veritatis molestias culpa in, recusandae laboriosam neque aliquid
-            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
-            distinctio corporis earum similique!
+           All the campaigns available are listed on the Homepage. Click on any campiagn for its details.
+           You can know the target, the story and the donors that have backed the campaign. 
           </p>
         </details>
         <details class="group border-s-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
           <summary class="flex cursor-pointer items-center justify-between gap-1.5">
             <h2 class="text-lg font-medium text-gray-900">
-              Lorem ipsum dolor sit amet consectetur adipisicing?
+              4. Donate to a campaign.
             </h2>
 
             <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
@@ -118,16 +113,15 @@ const About = () => {
           </summary>
 
           <p class="mt-4 leading-relaxed text-gray-700">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-            veritatis molestias culpa in, recusandae laboriosam neque aliquid
-            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
-            distinctio corporis earum similique!
+            You can donate to a campaign by clicking the fund campiagn button on campaign details page. 
+            You can donate whatever amount of coins you want. The transaction will be performed using 
+            your Metamask wallet. 
           </p>
         </details>
         <details class="group border-s-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
           <summary class="flex cursor-pointer items-center justify-between gap-1.5">
             <h2 class="text-lg font-medium text-gray-900">
-              Lorem ipsum dolor sit amet consectetur adipisicing?
+              5. Disconnecting your wallet
             </h2>
 
             <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
@@ -147,16 +141,13 @@ const About = () => {
           </summary>
 
           <p class="mt-4 leading-relaxed text-gray-700">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-            veritatis molestias culpa in, recusandae laboriosam neque aliquid
-            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
-            distinctio corporis earum similique!
+           For logging out of your Metamask wallet, click on Logout tab. It ensures the security of the currency or coins in your wallet.
           </p>
         </details>
         <details class="group border-s-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
           <summary class="flex cursor-pointer items-center justify-between gap-1.5">
             <h2 class="text-lg font-medium text-gray-900">
-              Lorem ipsum dolor sit amet consectetur adipisicing?
+            6. Still have queries?
             </h2>
 
             <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
@@ -176,100 +167,10 @@ const About = () => {
           </summary>
 
           <p class="mt-4 leading-relaxed text-gray-700">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-            veritatis molestias culpa in, recusandae laboriosam neque aliquid
-            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
-            distinctio corporis earum similique!
+          For any more assistance, contact us at info@dreamfund.com.
           </p>
         </details>
-        <details class="group border-s-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
-          <summary class="flex cursor-pointer items-center justify-between gap-1.5">
-            <h2 class="text-lg font-medium text-gray-900">
-              Lorem ipsum dolor sit amet consectetur adipisicing?
-            </h2>
-
-            <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="size-5 shrink-0 transition duration-300 group-open:-rotate-45"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </span>
-          </summary>
-
-          <p class="mt-4 leading-relaxed text-gray-700">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-            veritatis molestias culpa in, recusandae laboriosam neque aliquid
-            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
-            distinctio corporis earum similique!
-          </p>
-        </details>
-        <details class="group border-s-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
-          <summary class="flex cursor-pointer items-center justify-between gap-1.5">
-            <h2 class="text-lg font-medium text-gray-900">
-              Lorem ipsum dolor sit amet consectetur adipisicing?
-            </h2>
-
-            <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="size-5 shrink-0 transition duration-300 group-open:-rotate-45"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </span>
-          </summary>
-
-          <p class="mt-4 leading-relaxed text-gray-700">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-            veritatis molestias culpa in, recusandae laboriosam neque aliquid
-            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
-            distinctio corporis earum similique!
-          </p>
-        </details>
-        <details class="group border-s-4 border-green-500 bg-gray-50 p-6 [&_summary::-webkit-details-marker]:hidden">
-          <summary class="flex cursor-pointer items-center justify-between gap-1.5">
-            <h2 class="text-lg font-medium text-gray-900">
-              Lorem ipsum dolor sit amet consectetur adipisicing?
-            </h2>
-
-            <span class="shrink-0 rounded-full bg-white p-1.5 text-gray-900 sm:p-3">
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="size-5 shrink-0 transition duration-300 group-open:-rotate-45"
-                viewBox="0 0 20 20"
-                fill="currentColor"
-              >
-                <path
-                  fill-rule="evenodd"
-                  d="M10 3a1 1 0 011 1v5h5a1 1 0 110 2h-5v5a1 1 0 11-2 0v-5H4a1 1 0 110-2h5V4a1 1 0 011-1z"
-                  clip-rule="evenodd"
-                />
-              </svg>
-            </span>
-          </summary>
-
-          <p class="mt-4 leading-relaxed text-gray-700">
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab hic
-            veritatis molestias culpa in, recusandae laboriosam neque aliquid
-            libero nesciunt voluptate dicta quo officiis explicabo consequuntur
-            distinctio corporis earum similique!
-          </p>
-        </details>
-      </div>
+             </div>
     </div>
   );
 };
