@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useLocation, useNavigate } from "react-router-dom";
-import { useStateContext } from "../context";
+import { useStateContext } from "../middleware";
 import { CountBox, CustomButton, Loader } from "../components";
 import { calculateBarPercentage, daysLeft } from "../utils";
 import { dashboard, thirdweb } from "../assets";

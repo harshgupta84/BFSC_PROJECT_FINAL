@@ -13,14 +13,14 @@ export const navlinks = [
   },
   
   {
-    name: 'Profile',
+    name: 'Help',
     imgUrl: profile,
-    link: '/profile',
+    link: '/touse',
   },
   {
     name: 'Logout',
     imgUrl: logout,
-    link: '/',
+    link: '/logout',
     //disabled: true,
   },
 ];

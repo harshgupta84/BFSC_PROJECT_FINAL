@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import { BrowserRouter as Router } from 'react-router-dom';
 import { ChainId, ThirdwebProvider, useContract } from '@thirdweb-dev/react';
-import { StateContextProvider } from './context';
+import { StateContextProvider } from './middleware';
 import App from './App';
 import './index.css';
 import { Sepolia } from "@thirdweb-dev/chains";

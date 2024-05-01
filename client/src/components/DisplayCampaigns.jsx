@@ -34,13 +34,18 @@ const DisplayCampaigns = ({ title, isLoading, campaigns }) => {
 
         {/* Display fetched campaigns */}
         {!isLoading &&
-          campaigns.map((campaign) => (
-            <FundCard
-              key={uuidv4()}
-              {...campaign}
-              handleClick={() => handleNavigate(campaign)}
-            />
-          ))}
+          campaigns.map(
+            (campaign) => (
+              console.log(uuidv4()),
+              (
+                <FundCard
+                  key={uuidv4()}
+                  {...campaign}
+                  handleClick={() => handleNavigate(campaign)}
+                />
+              )
+            )
+          )}
       </div>
     </div>
   );
