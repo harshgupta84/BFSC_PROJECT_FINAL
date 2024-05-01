@@ -1,8 +1,8 @@
 import React from "react";
 import { Route, Routes } from "react-router-dom";
 
-import { Sidebar, Navbar } from "./components"; 
-import { CampaignDetails, CreateCampaign, Home } from "./pages";
+import { Sidebar, Navbar } from "./components"; // Assuming Sidebar is imported from components directory
+import { CampaignDetails, CreateCampaign, Home, Profile } from "./pages";
 import Footer from "./components/Footer";
 import About from "./pages/About";
 import Logout from "./pages/Logout";
@@ -15,7 +15,7 @@ const App = () => {
 
         <Routes>
           <Route path="/" element={<Home />} />
-          
+          <Route path="/profile" element={<Profile />} />
           <Route path="/create-campaign" element={<CreateCampaign />} />
           <Route path="/campaign-details/:id" element={<CampaignDetails />} />
           <Route path="/touse" element={<About />} />

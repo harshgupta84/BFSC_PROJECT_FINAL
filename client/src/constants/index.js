@@ -1,25 +1,25 @@
-//import { createCampaign, dashboard, logout, payment, profile, withdraw } from '../assets';
+import { createCampaign, dashboard, logout, payment, profile, withdraw } from '../assets';
 
 export const navlinks = [
   {
     name: 'Home',
-    //imgUrl: dashboard,
+    imgUrl: dashboard,
     link: '/',
   },
   {
     name: 'Campaign',
-    //imgUrl: createCampaign,
+    imgUrl: createCampaign,
     link: '/create-campaign',
   },
   
   {
     name: 'Help',
-    //imgUrl: profile,
+    imgUrl: profile,
     link: '/touse',
   },
   {
     name: 'Logout',
-    //imgUrl: logout,
+    imgUrl: logout,
     link: '/logout',
     //disabled: true,
   },
